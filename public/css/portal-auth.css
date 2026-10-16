@@ -1,0 +1,179 @@
+/* --- KUSTOM CSS TERPUSAT: AUTH & PORTAL MAGANG (SAMSAT KBB) --- */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    color: #1e293b;
+}
+
+/* Wrapper utama */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Navbar: Warna biru khas SAMSAT/Signal */
+.navbar-custom {
+    background-color: #3b82f6;
+    border-bottom: 1px solid #2563eb;
+    padding: 14px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-custom .navbar-brand {
+    color: #ffffff !important;
+}
+
+/* Tombol di Header (misal: Daftar Akun / Login) */
+.navbar-custom .btn-outline-primary, 
+.navbar-custom .btn-outline-success {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+.navbar-custom .btn-outline-primary:hover, 
+.navbar-custom .btn-outline-success:hover {
+    background-color: #ffffff !important;
+    color: #3b82f6 !important;
+}
+
+/* Card Container di Tengah (Clean & Modern di atas background putih) */
+.glass-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    color: #1e293b;
+    padding: 35px;
+    margin: 30px auto;
+    border: 1px solid #f1f5f9;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.glass-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Avatar atau Logo di dalam card */
+.avatar-icon {
+    width: 70px;
+    height: 70px;
+    background: #eff6ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    color: #3b82f6;
+    border: 1px solid #dbeafe;
+}
+
+/* Form Input dengan garis bawah rapi */
+.form-label-custom {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 4px;
+}
+
+.form-control-glass {
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid #cbd5e1;
+    border-radius: 0;
+    color: #1e293b;
+    padding: 8px 4px 8px 0;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-control-glass:focus {
+    background: transparent;
+    color: #1e293b;
+    border-color: #3b82f6;
+    box-shadow: none;
+    transform: translateX(4px);
+}
+
+.form-control-glass::placeholder {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.input-group-text-glass {
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid #cbd5e1;
+    color: #64748b;
+    padding-left: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.input-group:focus-within .input-group-text-glass {
+    color: #3b82f6;
+    transform: scale(1.1);
+}
+
+/* Tombol Utama (Warna Biru SAMSAT) dengan Efek Animasi */
+.btn-glass {
+    background: #3b82f6;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-glass:hover {
+    background: #2563eb;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+    color: white;
+}
+
+.btn-glass:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+/* Footer: Warna biru yang senada dengan header */
+.footer-custom {
+    background-color: #1e3a8a;
+    color: #bfdbfe;
+    padding: 40px 0 20px 0;
+    font-size: 14px;
+    border-top: 1px solid #1d4ed8;
+}
+
+.footer-custom h5 {
+    color: #ffffff;
+}
+
+.footer-custom a {
+    color: #e0f2fe;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.footer-custom a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+/* Animasi Fade In untuk Card */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
